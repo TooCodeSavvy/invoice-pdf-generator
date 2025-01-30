@@ -93,14 +93,12 @@ File and Class Structure
 ------------------------
 ```
 invoice-pdf-generator/
-├── assets/              # Plugin assets (images, JS, etc.)
 ├── includes/
-│   ├── class-pdf-url-generator.php      # Handles the PDF URL generation
-│   ├── class-order-api.php             # Extends WooCommerce REST API response to include PDF URL
-│   └── class-invoice-pdf-generator.php # Main plugin class
-├── languages/           # Translation files
-├── plugin.php           # Main plugin entry point
-├── readme.md           # This file`
+│   ├── class-pdf-url-generator.php      # Handles the generation of PDF URLs for the invoices
+│   ├── class-order-api.php             # Modifies the WooCommerce REST API response to include the invoice PDF URL
+│   └── class-invoice-pdf-generator.php # Main plugin class that initializes the plugin functionality and hooks into WooCommerce actions
+├── plugin.php                         # Main plugin entry point that initializes the plugin and includes necessary files
+├── README.md                          # Contains plugin documentation, setup instructions, and usage details
 ```
 
 
